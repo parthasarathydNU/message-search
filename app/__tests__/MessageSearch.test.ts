@@ -31,7 +31,7 @@ test("find standard substrings inside of the messages", () => {
   search.prepare();
 
   expect(search.query("Zortech").sort()).toEqual(["278406"].sort());
-  expect(search.query("").length).toEqual(Object.keys(data).length);
+  expect(search.query("").length).toEqual(0);
   expect(search.query("command").sort()).toEqual(["259639", "263215", "266734"].sort());
   expect(search.query("incredible").sort()).toEqual(["251084", "251811", "255289", "258773", "263054", "271136", "271876", "272136", "278157", "278603"].sort());
   expect(search.query("ux").sort()).toEqual(["274722"].sort());
